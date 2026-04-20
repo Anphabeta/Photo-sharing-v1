@@ -19,11 +19,10 @@ function UserPhotos() {
             <CardHeader title="Post" subheader={item.date_time} />
             <CardMedia
               component="img"
-              image={`../../images/${item.file_name}`}
+              image={require(`../../images/${item.file_name}`)}
               alt={item.file_name}
             />
           </Card>
-          <Typography variant="body1">{item.date_time}</Typography>
         </>
       ))}
     </>
